@@ -1,0 +1,247 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: white;
+  min-height: 100vh;
+}
+
+/* ==========================
+ TOP NAVIGATION
+========================== */
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 15px 25px;
+}
+
+/* Gmail & Images */
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #f1f3f4;
+}
+
+/* Sign In Button */
+
+.signin-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background: #1557b0;
+}
+
+/* Menu Icon */
+
+.menu-icon {
+  font-size: 22px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  background: #f1f3f4;
+}
+
+/* ==========================
+ MAIN SECTION
+========================== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 15px;
+}
+
+/* ==========================
+ GOOGLE LOGO
+========================== */
+
+.google-logo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+ COMMAND BOX
+========================== */
+
+.command-box {
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.command-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* ==========================
+ SEARCH BOX
+========================== */
+
+.search-box {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box button {
+  width: 55px;
+  height: 46px;
+  border: none;
+  background: #f1f3f4;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box button:hover {
+  background: #dadce0;
+}
+
+/* ==========================
+ SEARCH ICON
+========================== */
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
+
+/* ==========================
+ TABLET VIEW
+========================== */
+
+@media (max-width: 768px) {
+  .top-nav {
+    gap: 8px;
+    padding: 15px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .signin-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .google-logo {
+    max-width: 220px;
+  }
+
+  main {
+    margin-top: 80px;
+  }
+}
+
+/* ==========================
+ MOBILE VIEW
+========================== */
+
+@media (max-width: 480px) {
+  .top-nav {
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .signin-btn {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .menu-icon {
+    font-size: 18px;
+    padding: 6px 8px;
+  }
+
+  .google-logo {
+    max-width: 180px;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+
+  .command-box {
+    width: 95%;
+  }
+
+  .search-box {
+    width: 95%;
+  }
+
+  .command-box input,
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .search-box button {
+    width: 50px;
+    height: 44px;
+  }
+}
